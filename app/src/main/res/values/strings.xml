@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FotografiaPlus</string>
+    <string name="btn_girar">Girar</string>
+    <string name="btn_galeria">Galería</string>
+</resources>

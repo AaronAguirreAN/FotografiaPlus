@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:contentDescription="Foto" />
+    <LinearLayout
+        android:id="@+id/linear_secundari"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_galeria"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/btn_galeria" />
+
+        <ImageButton
+            android:id="@+id/btn_camera"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:contentDescription="Boton de foto"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/camera"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <Button
+            android:id="@+id/btn_girar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:text="@string/btn_girar"/>
+    </LinearLayout>
+
+</LinearLayout>
